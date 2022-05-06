@@ -16,9 +16,6 @@ async function main() {
 
 }
 
-function getInitHash() {
-
-}
 
 /**
  * deployContracts
@@ -62,8 +59,8 @@ async function deployContracts() {
     // contractList.push("./artifacts/contracts/libraries/SafeMath.sol/SafeMath.json");
     // contractList.push("./artifacts/contracts/libraries/TransferHelper.sol/TransferHelper.json");
     // contractList.push("./artifacts/contracts/libraries/UQ112x112.sol/UQ112x112.json");
-    // contractList.push("./artifacts/contracts/TokenA.sol/TokenA.json");
-    // contractList.push("./artifacts/contracts/TokenB.sol/TokenB.json");
+    contractList.push("./artifacts/contracts/TokenA.sol/TokenA.json");
+    contractList.push("./artifacts/contracts/TokenB.sol/TokenB.json");
 
     for (let i = 0; i < contractList.length; i++) {
         await deployOnChain(contractList[i], wallet);
